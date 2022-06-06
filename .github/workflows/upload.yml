@@ -1,0 +1,31 @@
+name: Upload Modpack
+
+# run on push to main and close PR on main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    types:
+      - closed
+  # allows manual run
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    name: Upload pack to server
+    steps:
+      # checkout the repo
+      - name: Checkout
+        uses: actions/checkout@v3
+      # upload action
+      - name: FTP upload
+        uses: trashbyte/modpack-ftp-action@v1.0
+        with:
+          curse-api-key: ${{ secrets.CURSE_API_KEY }}
+          ftp-host: ${{ secrets.FTP_HOST }}
+          ftp-user: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          ftp-port: 21
+          remote-root: '.'
