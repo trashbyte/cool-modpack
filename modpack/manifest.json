@@ -24,6 +24,14 @@
       }
     },
     {
+      "projectID": 60089,
+      "fileID": 3601896,
+      "required": true,
+      "__meta": {
+        "name": "Mouse Tweaks"
+      }
+    },
+    {
       "projectID": 69162,
       "fileID": 3803484,
       "required": true,
@@ -82,6 +90,23 @@
           309927,
           306770
         ]
+      }
+    },
+    {
+      "projectID": 228525,
+      "fileID": 3820189,
+      "required": true,
+      "__meta": {
+        "name": "Bookshelf",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 230976,
+      "fileID": 3693140,
+      "required": true,
+      "__meta": {
+        "name": "Fast Leaf Decay"
       }
     },
     {
@@ -164,6 +189,17 @@
       }
     },
     {
+      "projectID": 241160,
+      "fileID": 3549513,
+      "required": true,
+      "__meta": {
+        "name": "NetherPortalFix",
+        "dependencies": [
+          531761
+        ]
+      }
+    },
+    {
       "projectID": 243121,
       "fileID": 3800462,
       "required": true,
@@ -194,11 +230,38 @@
       }
     },
     {
+      "projectID": 246939,
+      "fileID": 3699221,
+      "required": true,
+      "__meta": {
+        "name": "Water Strainer"
+      }
+    },
+    {
       "projectID": 250363,
       "fileID": 3642382,
       "required": true,
       "__meta": {
         "name": "AutoRegLib"
+      }
+    },
+    {
+      "projectID": 250398,
+      "fileID": 3758406,
+      "required": true,
+      "__meta": {
+        "name": "Controlling"
+      }
+    },
+    {
+      "projectID": 250419,
+      "fileID": 3754812,
+      "required": true,
+      "__meta": {
+        "name": "Enchantment Descriptions",
+        "dependencies": [
+          228525
+        ]
       }
     },
     {
@@ -233,6 +296,14 @@
       }
     },
     {
+      "projectID": 254268,
+      "fileID": 3724596,
+      "required": true,
+      "__meta": {
+        "name": "Torchmaster"
+      }
+    },
+    {
       "projectID": 256717,
       "fileID": 3757581,
       "required": true,
@@ -261,6 +332,14 @@
       }
     },
     {
+      "projectID": 261251,
+      "fileID": 3800660,
+      "required": true,
+      "__meta": {
+        "name": "Bad Wither No Cookie - Reloaded"
+      }
+    },
+    {
       "projectID": 271835,
       "fileID": 3803488,
       "required": true,
@@ -272,11 +351,27 @@
       }
     },
     {
+      "projectID": 276951,
+      "fileID": 3682307,
+      "required": true,
+      "__meta": {
+        "name": "Comforts (Forge)"
+      }
+    },
+    {
       "projectID": 282001,
       "fileID": 3770724,
       "required": true,
       "__meta": {
         "name": "CC: Tweaked"
+      }
+    },
+    {
+      "projectID": 282313,
+      "fileID": 3757606,
+      "required": true,
+      "__meta": {
+        "name": "TipTheScales"
       }
     },
     {
@@ -317,6 +412,14 @@
       }
     },
     {
+      "projectID": 296686,
+      "fileID": 3773568,
+      "required": true,
+      "__meta": {
+        "name": "Gauges and Switches"
+      }
+    },
+    {
       "projectID": 301051,
       "fileID": 3575623,
       "required": true,
@@ -334,6 +437,15 @@
       "required": true,
       "__meta": {
         "name": "Patchouli"
+      }
+    },
+    {
+      "projectID": 308989,
+      "fileID": 3650485,
+      "required": true,
+      "__meta": {
+        "name": "Caelus API (Forge)",
+        "explicit": false
       }
     },
     {
@@ -373,6 +485,29 @@
           419699,
           404468,
           404465
+        ]
+      }
+    },
+    {
+      "projectID": 316873,
+      "fileID": 3553486,
+      "required": true,
+      "__meta": {
+        "name": "Curio of Undying (Forge)",
+        "dependencies": [
+          309927
+        ]
+      }
+    },
+    {
+      "projectID": 317716,
+      "fileID": 3601975,
+      "required": true,
+      "__meta": {
+        "name": "Curious Elytra (Forge)",
+        "dependencies": [
+          309927,
+          308989
         ]
       }
     },
@@ -459,6 +594,15 @@
       }
     },
     {
+      "projectID": 351264,
+      "fileID": 3768446,
+      "required": true,
+      "__meta": {
+        "name": "Kotlin for Forge",
+        "explicit": false
+      }
+    },
+    {
       "projectID": 361276,
       "fileID": 3808746,
       "required": true,
@@ -467,11 +611,30 @@
       }
     },
     {
+      "projectID": 368293,
+      "fileID": 3816393,
+      "required": true,
+      "__meta": {
+        "name": "Repurposed Structures (Forge)",
+        "dependencies": [
+          560323
+        ]
+      }
+    },
+    {
       "projectID": 388172,
       "fileID": 3819966,
       "required": true,
       "__meta": {
         "name": "GeckoLib"
+      }
+    },
+    {
+      "projectID": 388800,
+      "fileID": 3793106,
+      "required": true,
+      "__meta": {
+        "name": "Polymorph (Forge)"
       }
     },
     {
@@ -486,11 +649,39 @@
       }
     },
     {
+      "projectID": 391382,
+      "fileID": 3639155,
+      "required": true,
+      "__meta": {
+        "name": "More Overlays Updated"
+      }
+    },
+    {
+      "projectID": 396803,
+      "fileID": 3635700,
+      "required": true,
+      "__meta": {
+        "name": "Wormhole (Portals)",
+        "dependencies": [
+          438332,
+          454372
+        ]
+      }
+    },
+    {
       "projectID": 398521,
       "fileID": 3784851,
       "required": true,
       "__meta": {
         "name": "Farmer's Delight"
+      }
+    },
+    {
+      "projectID": 399558,
+      "fileID": 3712396,
+      "required": true,
+      "__meta": {
+        "name": "Construction Wand"
       }
     },
     {
@@ -545,6 +736,17 @@
         "name": "Thermal Locomotion",
         "dependencies": [
           222880
+        ]
+      }
+    },
+    {
+      "projectID": 410811,
+      "fileID": 3773058,
+      "required": true,
+      "__meta": {
+        "name": "FTB Essentials (Forge)",
+        "dependencies": [
+          404465
         ]
       }
     },
@@ -608,6 +810,17 @@
       }
     },
     {
+      "projectID": 422301,
+      "fileID": 3807524,
+      "required": true,
+      "__meta": {
+        "name": "Sophisticated Backpacks",
+        "dependencies": [
+          618298
+        ]
+      }
+    },
+    {
       "projectID": 423490,
       "fileID": 3819624,
       "required": true,
@@ -631,6 +844,14 @@
       }
     },
     {
+      "projectID": 429235,
+      "fileID": 3767288,
+      "required": true,
+      "__meta": {
+        "name": "FerriteCore (Forge)"
+      }
+    },
+    {
       "projectID": 429371,
       "fileID": 3815884,
       "required": true,
@@ -651,6 +872,15 @@
       }
     },
     {
+      "projectID": 438332,
+      "fileID": 3819933,
+      "required": true,
+      "__meta": {
+        "name": "SuperMartijn642's Config Lib",
+        "explicit": false
+      }
+    },
+    {
       "projectID": 439870,
       "fileID": 3817379,
       "required": true,
@@ -668,6 +898,31 @@
           328085,
           486392
         ]
+      }
+    },
+    {
+      "projectID": 448233,
+      "fileID": 3743929,
+      "required": true,
+      "__meta": {
+        "name": "Entity Culling Fabric/Forge"
+      }
+    },
+    {
+      "projectID": 451682,
+      "fileID": 3725041,
+      "required": true,
+      "__meta": {
+        "name": "No Villager Death Messages"
+      }
+    },
+    {
+      "projectID": 454372,
+      "fileID": 3773952,
+      "required": true,
+      "__meta": {
+        "name": "SuperMartijn642's Core Lib",
+        "explicit": false
       }
     },
     {
@@ -728,6 +983,14 @@
       }
     },
     {
+      "projectID": 491151,
+      "fileID": 3749665,
+      "required": true,
+      "__meta": {
+        "name": "Structures' Compass"
+      }
+    },
+    {
       "projectID": 499980,
       "fileID": 3819295,
       "required": true,
@@ -744,6 +1007,38 @@
         "dependencies": [
           421850
         ]
+      }
+    },
+    {
+      "projectID": 509575,
+      "fileID": 3745494,
+      "required": true,
+      "__meta": {
+        "name": "Observable",
+        "dependencies": [
+          351264,
+          419699
+        ]
+      }
+    },
+    {
+      "projectID": 518228,
+      "fileID": 3712581,
+      "required": true,
+      "__meta": {
+        "name": "SignTastic",
+        "dependencies": [
+          233105
+        ]
+      }
+    },
+    {
+      "projectID": 520110,
+      "fileID": 3800622,
+      "required": true,
+      "__meta": {
+        "name": "Iceberg",
+        "explicit": false
       }
     },
     {
@@ -767,11 +1062,60 @@
       }
     },
     {
+      "projectID": 532127,
+      "fileID": 3675785,
+      "required": true,
+      "__meta": {
+        "name": "Legendary Tooltips",
+        "dependencies": [
+          520110
+        ]
+      }
+    },
+    {
+      "projectID": 560156,
+      "fileID": 3806837,
+      "required": true,
+      "__meta": {
+        "name": "BucketLib",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 560323,
+      "fileID": 3669114,
+      "required": true,
+      "__meta": {
+        "name": "Feature NBT Deadlock Be Gone",
+        "explicit": false
+      }
+    },
+    {
       "projectID": 563928,
       "fileID": 3816497,
       "required": true,
       "__meta": {
         "name": "TerraBlender (Forge)"
+      }
+    },
+    {
+      "projectID": 585328,
+      "fileID": 3794675,
+      "required": true,
+      "__meta": {
+        "name": "Wooden Bucket",
+        "dependencies": [
+          560156
+        ]
+      }
+    },
+    {
+      "projectID": 618298,
+      "fileID": 3819260,
+      "required": true,
+      "__meta": {
+        "name": "Sophisticated Core",
+        "explicit": false
       }
     },
     {
