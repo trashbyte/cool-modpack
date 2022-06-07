@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
       # upload action
       - name: FTP upload
-        uses: trashbyte/modpack-ftp-action@v1.0
+        uses: trashbyte/modpack-ftp-action@v1.1
         with:
           curse-api-key: ${{ secrets.CURSE_API_KEY }}
           ftp-host: ${{ secrets.FTP_HOST }}
