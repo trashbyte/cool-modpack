@@ -1,0 +1,7 @@
+# 
+#The path to the lang file where lang entries are automatically generated %lang% is replaced by the value of the lang config value
+langPath = "kubejs/assets/ponderjs_generated/lang/%lang%.json"
+# 
+#Used for the langPath config value, and if autoGenerateLang is false this is where it will generate lang in the generated pack
+lang = "en_us"
+
