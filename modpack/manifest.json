@@ -97,8 +97,7 @@
       "fileID": 3820189,
       "required": true,
       "__meta": {
-        "name": "Bookshelf",
-        "explicit": false
+        "name": "Bookshelf"
       }
     },
     {
@@ -444,8 +443,7 @@
       "fileID": 3650485,
       "required": true,
       "__meta": {
-        "name": "Caelus API (Forge)",
-        "explicit": false
+        "name": "Caelus API (Forge)"
       }
     },
     {
@@ -598,8 +596,7 @@
       "fileID": 3768446,
       "required": true,
       "__meta": {
-        "name": "Kotlin for Forge",
-        "explicit": false
+        "name": "Kotlin for Forge"
       }
     },
     {
@@ -877,8 +874,7 @@
       "fileID": 3819933,
       "required": true,
       "__meta": {
-        "name": "SuperMartijn642's Config Lib",
-        "explicit": false
+        "name": "SuperMartijn642's Config Lib"
       }
     },
     {
@@ -923,8 +919,7 @@
       "fileID": 3773952,
       "required": true,
       "__meta": {
-        "name": "SuperMartijn642's Core Lib",
-        "explicit": false
+        "name": "SuperMartijn642's Core Lib"
       }
     },
     {
@@ -1039,8 +1034,7 @@
       "fileID": 3800622,
       "required": true,
       "__meta": {
-        "name": "Iceberg",
-        "explicit": false
+        "name": "Iceberg"
       }
     },
     {
@@ -1069,6 +1063,7 @@
       "required": true,
       "__meta": {
         "name": "Legendary Tooltips",
+        "server_skip": true,
         "dependencies": [
           520110
         ]
@@ -1079,8 +1074,7 @@
       "fileID": 3806837,
       "required": true,
       "__meta": {
-        "name": "BucketLib",
-        "explicit": false
+        "name": "BucketLib"
       }
     },
     {
@@ -1088,8 +1082,7 @@
       "fileID": 3669114,
       "required": true,
       "__meta": {
-        "name": "Feature NBT Deadlock Be Gone",
-        "explicit": false
+        "name": "Feature NBT Deadlock Be Gone"
       }
     },
     {
@@ -1116,8 +1109,7 @@
       "fileID": 3819260,
       "required": true,
       "__meta": {
-        "name": "Sophisticated Core",
-        "explicit": false
+        "name": "Sophisticated Core"
       }
     },
     {
