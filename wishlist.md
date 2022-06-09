@@ -11,9 +11,16 @@
   * adds reverb and sound attenuation
 
 
-## Utility/Tweak/Fix
+## Addons/Stuff
 
-* N/A
+* [Little Logistics](https://www.curseforge.com/minecraft/mc-mods/little-logistics/files/3818773)
+  * tiny train! tiny boat!!
+  * [Little Contraptions](https://www.curseforge.com/minecraft/mc-mods/little-contraptions/files/3814120)
+    * adds support for create contraptions to little logistics vehicles
+* [Steam Powered](https://www.curseforge.com/minecraft/mc-mods/steam-powered-create/files/3801079)
+  * adds steam engines and boilers to create
+* [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo/files/3814218)
+  * Ars Nouveau integration for create
 
 
 ## QoL
@@ -42,6 +49,8 @@
 
 ## Cosmetic
 
+* [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/3757571)
+  * adds cosmetic blocks for create
 * [Macaw's Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)
   * adds a variety of buildable bridges
 * [Macaw's Fences and Walls](https://www.curseforge.com/minecraft/-mods/macaws-fences-and-walls)
