@@ -12,12 +12,59 @@ let CR = MOD("create")
 let TE = MOD("thermal")
 let IE = MOD("immersiveengineering")
 
+function infiniDeploying(output, input, tool) {
+	return {
+		"type": "create:deploying",
+		"ingredients": [
+			Ingredient.of(input).toJson(),
+			Ingredient.of(tool).toJson()
+		],
+		"results": [
+			Item.of(output).toResultJson()
+		],
+		"keepHeldItem": true
+	}
+}
 
+// we don't like immersive engineering,
+// and the multiservo press is gonna turn into a trade station,
+// so we have to get creative with press recipes that involve dies/molds
+function createDiePress(outputs, input, transitional, die) {
+  let t = Item.of(transitional).toJson()
+  let d = Item.of(die).toJson()
+  return {
+    "type": "create:sequenced_assembly",
+    "ingredient": Item.of(input).toJson(),
+    "transitionalItem": t,
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [t, d],
+        "results": [t],
+        "keepHeldItem": true
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [t],
+        "results": [t]
+      }
+    ],
+    "results": outputs.map(i => Item.of(i).toJson()),
+    "loops": 1
+  }
+}
 
 onEvent('recipes', event => {
 	// Change recipes here
 
   unify(event)
+
+  event.custom(createDiePress(
+    ["minecraft:carrot"],
+    Item.of("minecraft:apple"),
+    "minecraft:wheat_seeds",
+    "minecraft:cobblestone"
+  ))
 })
 
 onEvent('item.tags', event => {
@@ -48,7 +95,7 @@ function unify(event) {
   deduplicate(IE("slag"), TE("slag"))
 
   event.remove({id: "minecraft:crafting_shaped", output: F('#rods/iron')})
-  
+
   dedupMetal("iron", {
     dusts: TE('iron_dust'),
     plates: CR('iron_sheet'),
