@@ -29,12 +29,12 @@ function infiniDeploying(output, input, tool) {
 // we don't like immersive engineering,
 // and the multiservo press is gonna turn into a trade station,
 // so we have to get creative with press recipes that involve dies/molds
-function createDiePress(outputs, input, transitional, die) {
-  let t = Item.of(transitional).toJson()
-  let d = Item.of(die).toJson()
+function createDiePress(params) {
+  let t = Item.of(params.transitional).toJson()
+  let d = Item.of(params.die).toJson()
   return {
     "type": "create:sequenced_assembly",
-    "ingredient": Item.of(input).toJson(),
+    "ingredient": Item.of(params.input).toJson(),
     "transitionalItem": t,
     "sequence": [
       {
@@ -49,7 +49,7 @@ function createDiePress(outputs, input, transitional, die) {
         "results": [t]
       }
     ],
-    "results": outputs.map(i => Item.of(i).toJson()),
+    "results": params.outputs.map(i => Item.of(i).toJson()),
     "loops": 1
   }
 }
@@ -59,12 +59,13 @@ onEvent('recipes', event => {
 
   unify(event)
 
-  event.custom(createDiePress(
-    ["minecraft:carrot"],
-    Item.of("minecraft:apple"),
-    "minecraft:wheat_seeds",
-    "minecraft:cobblestone"
-  ))
+  // example create die press recipe
+  event.custom(createDiePress({
+    outputs: ["minecraft:carrot"],
+    input: Item.of("minecraft:apple"),
+    transitional: "minecraft:wheat_seeds",
+    die: "minecraft:cobblestone"
+  }))
 })
 
 onEvent('item.tags', event => {
