@@ -81,6 +81,14 @@
       }
     },
     {
+      "projectID": 225608,
+      "fileID": 3697298,
+      "required": true,
+      "__meta": {
+        "name": "WorldEdit"
+      }
+    },
+    {
       "projectID": 225643,
       "fileID": 3818541,
       "required": true,
@@ -650,7 +658,6 @@
       "fileID": 3639155,
       "required": true,
       "__meta": {
-        "server_skip": true,
         "name": "More Overlays Updated"
       }
     },
@@ -902,7 +909,6 @@
       "fileID": 3743929,
       "required": true,
       "__meta": {
-        "server_skip": true,
         "name": "Entity Culling Fabric/Forge"
       }
     },
@@ -1063,7 +1069,6 @@
       "required": true,
       "__meta": {
         "name": "Legendary Tooltips",
-        "server_skip": true,
         "dependencies": [
           520110
         ]
