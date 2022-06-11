@@ -13,22 +13,13 @@
 
 ## Addons/Stuff
 
-* [Little Logistics](https://www.curseforge.com/minecraft/mc-mods/little-logistics/files/3818773)
-  * tiny train! tiny boat!!
-  * [Little Contraptions](https://www.curseforge.com/minecraft/mc-mods/little-contraptions/files/3814120)
-    * adds support for create contraptions to little logistics vehicles
 * [Steam Powered](https://www.curseforge.com/minecraft/mc-mods/steam-powered-create/files/3801079)
   * adds steam engines and boilers to create
-* [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo/files/3814218)
-  * Ars Nouveau integration for create
 
 
 ## QoL
 
-* [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
-  * adds non-craftable accessories that grant passive bonuses as rewards for exploration
-* [Platforms](https://www.curseforge.com/minecraft/mc-mods/platforms)
-  * Adds versatile platforms, stairs, ramps, frames and rails
+N/A
 
 
 ## Structures/World Gen
@@ -49,8 +40,6 @@
 
 ## Cosmetic
 
-* [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco/files/3757571)
-  * adds cosmetic blocks for create
 * [Macaw's Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)
   * adds a variety of buildable bridges
 * [Macaw's Fences and Walls](https://www.curseforge.com/minecraft/-mods/macaws-fences-and-walls)
@@ -71,8 +60,6 @@
   * adds several types of furniture
 * [Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors)
   * adds a bunch of trapdoor variants, including window/see-through variants
-* [Framed Blocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks)
-  * adds blockcraftery-style blocks in a variety of shapes that can be styled to look like any block
 
 
 ## Biomes/Dimensions

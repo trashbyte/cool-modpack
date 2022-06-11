@@ -51,6 +51,15 @@
       }
     },
     {
+      "projectID": 71738,
+      "fileID": 3765383,
+      "required": true,
+      "__meta": {
+        "name": "ShetiPhianCore",
+        "explicit": false
+      }
+    },
+    {
       "projectID": 220318,
       "fileID": 3759236,
       "required": true,
@@ -214,6 +223,17 @@
         "name": "Quark",
         "dependencies": [
           250363
+        ]
+      }
+    },
+    {
+      "projectID": 244786,
+      "fileID": 3765390,
+      "required": true,
+      "__meta": {
+        "name": "Platforms",
+        "dependencies": [
+          71738
         ]
       }
     },
@@ -471,6 +491,19 @@
       "required": true,
       "__meta": {
         "name": "Curios API (Forge)"
+      }
+    },
+    {
+      "projectID": 312353,
+      "fileID": 3771085,
+      "required": true,
+      "__meta": {
+        "name": "Artifacts",
+        "dependencies": [
+          465066,
+          309927,
+          309927
+        ]
       }
     },
     {
@@ -905,6 +938,14 @@
       }
     },
     {
+      "projectID": 441647,
+      "fileID": 3813948,
+      "required": true,
+      "__meta": {
+        "name": "FramedBlocks"
+      }
+    },
+    {
       "projectID": 448233,
       "fileID": 3743929,
       "required": true,
@@ -934,6 +975,15 @@
       "required": true,
       "__meta": {
         "name": "Configured"
+      }
+    },
+    {
+      "projectID": 465066,
+      "fileID": 3678612,
+      "required": true,
+      "__meta": {
+        "name": "ExpandAbility",
+        "explicit": false
       }
     },
     {

@@ -254,5 +254,6 @@ function pressingRecipes(event) {
     // so then what's left is
     // - gears
     // - coins
-  
+
+		// use event.forEachRecipe to get the gear and coin recipes
 }
