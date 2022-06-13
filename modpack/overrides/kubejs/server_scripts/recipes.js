@@ -1,10 +1,8 @@
 
 var log = []
 
-/////////////////////
-
 onEvent('player.chat', function (event) {
-	// Check if message equals creeper, ignoring case
+	// commands for looking at the log
 
 	if (event.message.startsWith('!clear')) {
 		event.player.tell('Log cleared')
@@ -25,6 +23,8 @@ onEvent('player.chat', function (event) {
 		event.cancel()
 	}
 })
+
+/////////////////////
 
 // constructs item names from parameters
 let MOD = (domain) => (id, x) => (x ? `${x}x ` : "") + (id.startsWith('#') ? '#' : "") + domain + ":" + id.replace('#', '')
@@ -54,36 +54,65 @@ function infiniDeploying(output, input, tool) {
 	}
 }
 
+/////////////////////
+
 // we don't like immersive engineering,
 // and the multiservo press is gonna turn into a trade station,
 // so we have to get creative with press recipes that involve dies/molds
 function createDiePress(params) {
-  let t = Item.of(params.transitional).toJson()
+	let t = Item.of(params.transitional).toJson()
   let d = Item.of(params.die).toJson()
+	let beforeSteps = (t) => [];
+	let afterSteps  = (t) => [];
+	if (params.additionalSteps) {
+		let steps = params.additionalSteps;
+		if (steps.beforeDie) beforeSteps = steps.beforeDie;
+		if (steps.afterDie)  afterSteps  = steps.afterDie;
+	}
   return {
     "type": "create:sequenced_assembly",
-    "ingredient": Item.of(params.input).toJson(),
+    "ingredient": Ingredient.of(params.input).toJson(),
     "transitionalItem": t,
-    "sequence": [
+    "sequence": [].concat(
+			beforeSteps(t),
       {
         "type": "create:deploying",
         "ingredients": [t, d],
         "results": [t],
         "keepHeldItem": true
       },
+			afterSteps(t),
       {
         "type": "create:pressing",
         "ingredients": [t],
         "results": [t]
       }
-    ],
-    "results": params.outputs.map(i => Item.of(i).toJson()),
+    ),
+    "results": params.outputs.map(i => Item.of(i).toResultJson()),
     "loops": 1
   }
 }
 
+//////////////////
+
+onEvent('item.tags', event => {
+	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
+	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
+
+	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
+	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
+})
+
 onEvent('recipes', event => {
 	// Change recipes here
+
+	let thing = Item.of("thermal:iron_coin", {Counterfeit: 1});
+	log.push(thing.getNbt())
+
+	// Ingredient.of(F("#gears")).stacks.forEach(i => {
+	// 	let m = i.toString().match(/([a-z_]+)_gear/)[1]
+	// 	log.push(m)
+	// })
 
   modifyIE(event)
   modifyTE(event)
@@ -98,14 +127,6 @@ onEvent('recipes', event => {
     transitional: "minecraft:wheat_seeds",
     die: "minecraft:cobblestone"
   }))
-})
-
-onEvent('item.tags', event => {
-	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
-	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
-
-	// Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
 })
 
 //////////////// recipe functions
@@ -123,7 +144,7 @@ function modifyIE(event) {
   }))
 
   // remove all arc furnace
-  event.remove({ type: IE("arc_furnace") })
+  //event.remove({ type: IE("arc_furnace") })
   // so it turns out the recycling recipes can be turned off by a recipe json
   // so ive tried adding that, data/immersiveengineering/recipes/arc_recycling_list.json
   // hopefully it works!!!!
@@ -132,9 +153,19 @@ function modifyIE(event) {
   event.remove({ type: IE("metal_press") })
 }
 
+let teGears = []
+let teCoins = []
 // modify Thermal Series
 function modifyTE(event) {
-  // goodbye multiservo press you will gain a higher purpose later
+	// steal the gear and coin recipes
+	event.forEachRecipe({ id: /thermal:parts\/[a-z_]+_gear/ }, recipe => {
+		teGears.push({input: recipe.inputItems[0], output: recipe.outputItems[0]})
+	})
+	event.forEachRecipe({ id: /thermal:machine\/press\/press_[a-z_]+_nugget_to_coin/ }, recipe => {
+		teCoins.push({input: recipe.inputItems[0], output: recipe.outputItems[0]})
+	})
+
+	// goodbye multiservo press you will gain a higher purpose later
   event.remove({ type: TE("press") })
 }
 
@@ -242,7 +273,7 @@ function pressingRecipes(event) {
     let ingot = F(`#ingots/${metalName}`);
 
     // - plates can be create pressed and IE hammered
-    log.push(`${metalName}: ${plate} <= ${ingot}`)
+    // log.push(`${metalName}: ${plate} <= ${ingot}`)
     event.recipes.createPressing(
       [plate], ingot
     ).id("kubejs:press_plate_"+metalName)
@@ -250,10 +281,26 @@ function pressingRecipes(event) {
       plate, [ingot, IE("hammer")]
     ).damageIngredient(IE("hammer")).id(`kubejs:plate_${metalName}_hammering`)
   }
-    // - wires and rods can already be rolled
-    // so then what's left is
-    // - gears
-    // - coins
+  // - wires and rods can already be rolled
+  // so then what's left is
+  // - gears
+	teGears.forEach(item => {
+		event.custom(createDiePress({
+			input: Item.of(item.input, 1),
+			die: TE("press_gear_die"),
+			transitional: TE("press_gear_die"),
+			outputs: [item.output]
+		}))
+	})
+  // - coins
+	teCoins.forEach(item => {
+		event.custom(createDiePress({
+			input: Item.of(item.input, 1),
+			die: TE("press_coin_die"),
+			transitional: TE("press_coin_die"),
+			outputs: [Item.of(item.output, 1, {Counterfeit: 1})]
+		}))
+	})
 
-		// use event.forEachRecipe to get the gear and coin recipes
+	// use event.forEachRecipe to get the gear and coin recipes
 }

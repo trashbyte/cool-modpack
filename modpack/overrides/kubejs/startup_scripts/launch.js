@@ -6,13 +6,6 @@ let MOD = (domain) => (id, x) => (x ? `${x}x ` : "") + (id.startsWith('#') ? '#'
 let MC = MOD("minecraft")
 let IE = MOD("immersiveengineering")
 
-// items to remove
-global.removeItems = [
-  IE("slag"),
-  IE("coal_coke")
-];
-
-
 onEvent('item.registry', event => {
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
