@@ -216,6 +216,14 @@
       }
     },
     {
+      "projectID": 241319,
+      "fileID": 3820011,
+      "required": true,
+      "__meta": {
+        "name": "Reliquary Reincarnations"
+      }
+    },
+    {
       "projectID": 243121,
       "fileID": 3800462,
       "required": true,
@@ -262,6 +270,25 @@
       "required": true,
       "__meta": {
         "name": "Water Strainer"
+      }
+    },
+    {
+      "projectID": 247560,
+      "fileID": 3825944,
+      "required": true,
+      "__meta": {
+        "name": "Oh The Biomes You'll Go",
+        "dependencies": [
+          563928
+        ]
+      }
+    },
+    {
+      "projectID": 248787,
+      "fileID": 3686482,
+      "required": true,
+      "__meta": {
+        "name": "AppleSkin"
       }
     },
     {
@@ -312,6 +339,14 @@
           233105,
           326041
         ]
+      }
+    },
+    {
+      "projectID": 252042,
+      "fileID": 3788082,
+      "required": true,
+      "__meta": {
+        "name": "Paintings ++"
       }
     },
     {
@@ -367,6 +402,33 @@
       }
     },
     {
+      "projectID": 267193,
+      "fileID": 3813733,
+      "required": true,
+      "__meta": {
+        "name": "Chunk-Pregenerator"
+      }
+    },
+    {
+      "projectID": 267602,
+      "fileID": 3737369,
+      "required": true,
+      "__meta": {
+        "name": "ConnectedTexturesMod"
+      }
+    },
+    {
+      "projectID": 271740,
+      "fileID": 3717855,
+      "required": true,
+      "__meta": {
+        "name": "Toast Control",
+        "dependencies": [
+          283644
+        ]
+      }
+    },
+    {
       "projectID": 271835,
       "fileID": 3803488,
       "required": true,
@@ -399,6 +461,26 @@
       "required": true,
       "__meta": {
         "name": "TipTheScales"
+      }
+    },
+    {
+      "projectID": 283644,
+      "fileID": 3781199,
+      "required": true,
+      "__meta": {
+        "name": "Placebo",
+        "explicit": false
+      }
+    },
+    {
+      "projectID": 288885,
+      "fileID": 3717873,
+      "required": true,
+      "__meta": {
+        "name": "FastWorkbench",
+        "dependencies": [
+          283644
+        ]
       }
     },
     {
@@ -439,11 +521,30 @@
       }
     },
     {
+      "projectID": 295319,
+      "fileID": 3597135,
+      "required": true,
+      "__meta": {
+        "name": "Wall-Jump! [FORGE]"
+      }
+    },
+    {
       "projectID": 296686,
       "fileID": 3773568,
       "required": true,
       "__meta": {
         "name": "Gauges and Switches"
+      }
+    },
+    {
+      "projectID": 299540,
+      "fileID": 3717883,
+      "required": true,
+      "__meta": {
+        "name": "FastFurnace",
+        "dependencies": [
+          283644
+        ]
       }
     },
     {
@@ -455,6 +556,17 @@
         "dependencies": [
           243121,
           250363
+        ]
+      }
+    },
+    {
+      "projectID": 306626,
+      "fileID": 3813427,
+      "required": true,
+      "__meta": {
+        "name": "Nature's Aura",
+        "dependencies": [
+          306770
         ]
       }
     },
@@ -559,6 +671,14 @@
       }
     },
     {
+      "projectID": 324973,
+      "fileID": 3766138,
+      "required": true,
+      "__meta": {
+        "name": "Dungeon Crawl"
+      }
+    },
+    {
       "projectID": 326041,
       "fileID": 3813643,
       "required": true,
@@ -638,6 +758,30 @@
       "required": true,
       "__meta": {
         "name": "Kotlin for Forge"
+      }
+    },
+    {
+      "projectID": 353399,
+      "fileID": 3790291,
+      "required": true,
+      "__meta": {
+        "name": "Archer's Paradox",
+        "dependencies": [
+          69162
+        ]
+      }
+    },
+    {
+      "projectID": 361026,
+      "fileID": 3809335,
+      "required": true,
+      "__meta": {
+        "name": "Occultism",
+        "dependencies": [
+          306770,
+          388172,
+          309927
+        ]
       }
     },
     {
@@ -775,6 +919,14 @@
         "dependencies": [
           222880
         ]
+      }
+    },
+    {
+      "projectID": 407174,
+      "fileID": 3759881,
+      "required": true,
+      "__meta": {
+        "name": "Shutup Experimental Settings!"
       }
     },
     {
@@ -978,6 +1130,14 @@
       }
     },
     {
+      "projectID": 459701,
+      "fileID": 3803098,
+      "required": true,
+      "__meta": {
+        "name": "Catalogue"
+      }
+    },
+    {
       "projectID": 465066,
       "fileID": 3678612,
       "required": true,
@@ -1086,6 +1246,14 @@
       }
     },
     {
+      "projectID": 513688,
+      "fileID": 3696607,
+      "required": true,
+      "__meta": {
+        "name": "Terralith"
+      }
+    },
+    {
       "projectID": 518228,
       "fileID": 3712581,
       "required": true,
@@ -1133,6 +1301,14 @@
         "dependencies": [
           520110
         ]
+      }
+    },
+    {
+      "projectID": 538587,
+      "fileID": 3694956,
+      "required": true,
+      "__meta": {
+        "name": "Dice"
       }
     },
     {
@@ -1188,6 +1364,17 @@
         "name": "Wooden Bucket",
         "dependencies": [
           560156
+        ]
+      }
+    },
+    {
+      "projectID": 591494,
+      "fileID": 3742561,
+      "required": true,
+      "__meta": {
+        "name": "More Storage Drawers",
+        "dependencies": [
+          223852
         ]
       }
     },

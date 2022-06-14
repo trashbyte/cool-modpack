@@ -1,24 +1,24 @@
-
-var log = []
+if(!global.log)
+	global.log = []
 
 onEvent('player.chat', function (event) {
 	// commands for looking at the log
 
 	if (event.message.startsWith('!clear')) {
 		event.player.tell('Log cleared')
-		log = []
+		global.log = []
 		event.cancel()
 	}
 
 	if (event.message.startsWith('!status')) {
-		if (log.length == 0) {
+		if (global.log.length == 0) {
 			event.player.tell('Log empty')
 			event.cancel()
 			return
 		}
 
 		event.player.tell('Log Start >')
-		log.forEach(s => event.player.tell(s))
+		global.log.forEach(s => event.player.tell(s))
 		event.player.tell('<')
 		event.cancel()
 	}
@@ -107,12 +107,7 @@ onEvent('recipes', event => {
 	// Change recipes here
 
 	let thing = Item.of("thermal:iron_coin", {Counterfeit: 1});
-	log.push(thing.getNbt())
-
-	// Ingredient.of(F("#gears")).stacks.forEach(i => {
-	// 	let m = i.toString().match(/([a-z_]+)_gear/)[1]
-	// 	log.push(m)
-	// })
+	global.log.push(thing.getNbt())
 
   modifyIE(event)
   modifyTE(event)
@@ -273,7 +268,6 @@ function pressingRecipes(event) {
     let ingot = F(`#ingots/${metalName}`);
 
     // - plates can be create pressed and IE hammered
-    // log.push(`${metalName}: ${plate} <= ${ingot}`)
     event.recipes.createPressing(
       [plate], ingot
     ).id("kubejs:press_plate_"+metalName)
