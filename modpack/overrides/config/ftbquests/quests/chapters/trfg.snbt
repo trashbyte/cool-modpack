@@ -1,0 +1,20 @@
+{
+	id: "272857F009DBB79F"
+	group: "57196966407CFD21"
+	order_index: 0
+	filename: "trfg"
+	title: "trfg"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "0AAF9F390D760CB7"
+		tasks: [{
+			id: "074B48051F1C0F11"
+			type: "stat"
+			stat: "minecraft:walk_one_cm"
+			value: 1000000
+		}]
+	}]
+}
