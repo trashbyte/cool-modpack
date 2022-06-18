@@ -1062,6 +1062,14 @@
       }
     },
     {
+      "projectID": 438116,
+      "fileID": 3696704,
+      "required": true,
+      "__meta": {
+        "name": "Macaw's Paintings"
+      }
+    },
+    {
       "projectID": 438332,
       "fileID": 3819933,
       "required": true,
@@ -1212,6 +1220,14 @@
       }
     },
     {
+      "projectID": 502372,
+      "fileID": 3683040,
+      "required": true,
+      "__meta": {
+        "name": "Macaw's Lights and Lamps"
+      }
+    },
+    {
       "projectID": 504908,
       "fileID": 3778233,
       "required": true,
@@ -1300,6 +1316,17 @@
         "name": "Legendary Tooltips",
         "dependencies": [
           520110
+        ]
+      }
+    },
+    {
+      "projectID": 536660,
+      "fileID": 3777944,
+      "required": true,
+      "__meta": {
+        "name": "YUNG's Bridges (Forge)",
+        "dependencies": [
+          421850
         ]
       }
     },
@@ -1407,6 +1434,14 @@
         "dependencies": [
           222880
         ]
+      }
+    },
+    {
+      "projectID": 629153,
+      "fileID": 3810627,
+      "required": true,
+      "__meta": {
+        "name": "Macaw's Paths and Pavings"
       }
     }
   ]

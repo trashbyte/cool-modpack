@@ -28,12 +28,6 @@ N/A
   * Generates abandoned cities in the world
 * [YUNG's Better Dungeons](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons)
   * dungeon generation overhaul
-* [YUNG's Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)
-  * cave generation overhaul
-* [YUNG's better portals](https://www.curseforge.com/minecraft/mc-mods/yungs-better-portals)
-  * changes how nether portals work
-* [YUNG's Bridges](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges)
-  * adds bridges to worldgen
 * [Nether's Exoticism](https://www.curseforge.com/minecraft/mc-mods/nethers-exoticism)
   * adds a new fruit tree to each vanilla nether biome, with crafting and potion recipes
 
@@ -64,10 +58,9 @@ N/A
 
 ## Biomes/Dimensions
 
-* [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
-* [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith)
 * [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys)
 * [Ecospherical Expansion](https://www.curseforge.com/minecraft/mc-mods/ecospherical-expansion)
 * [The Undergarden](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)
 * [Amplified Nether](https://www.curseforge.com/minecraft/mc-mods/amplified-nether)
 * [Incendium](https://www.curseforge.com/minecraft/mc-mods/incendium)
+* [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
