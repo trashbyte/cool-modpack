@@ -26,7 +26,7 @@
     {
       "projectID": 60089,
       "fileID": 3601896,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "Mouse Tweaks"
       }
@@ -92,7 +92,7 @@
     {
       "projectID": 225608,
       "fileID": 3697298,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "WorldEdit"
       }
@@ -248,7 +248,7 @@
     {
       "projectID": 245211,
       "fileID": 3671753,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "The One Probe"
       }
@@ -833,8 +833,9 @@
     {
       "projectID": 391382,
       "fileID": 3639155,
-      "required": true,
+      "required": false,
       "__meta": {
+        "server_skip": true,
         "name": "More Overlays Updated"
       }
     },
@@ -1036,7 +1037,7 @@
     {
       "projectID": 429235,
       "fileID": 3767288,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "FerriteCore (Forge)"
       }
@@ -1080,7 +1081,7 @@
     {
       "projectID": 439870,
       "fileID": 3817379,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "Customizable Player Models"
       }
@@ -1108,8 +1109,9 @@
     {
       "projectID": 448233,
       "fileID": 3743929,
-      "required": true,
+      "required": false,
       "__meta": {
+        "server_skip": true,
         "name": "Entity Culling Fabric/Forge"
       }
     },
@@ -1230,7 +1232,7 @@
     {
       "projectID": 504908,
       "fileID": 3778233,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "Traveler's Titles (Forge)",
         "dependencies": [
@@ -1252,7 +1254,7 @@
     {
       "projectID": 509575,
       "fileID": 3745494,
-      "required": true,
+      "required": false,
       "__meta": {
         "name": "Observable",
         "dependencies": [
@@ -1311,8 +1313,9 @@
     {
       "projectID": 532127,
       "fileID": 3675785,
-      "required": true,
+      "required": false,
       "__meta": {
+        "server_skip": true,
         "name": "Legendary Tooltips",
         "dependencies": [
           520110

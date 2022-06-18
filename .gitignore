@@ -5,5 +5,9 @@ libssl*.dll
 libcrypto*.dll
 cacert.pem
 
-### Modpack ###
+### Modpack export ###
 .out/
+
+### Config bloat ###
+modpack/overrides/config/worldedit/.archive-unpack/
+
