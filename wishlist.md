@@ -64,8 +64,6 @@ N/A
 
 ## Biomes/Dimensions
 
-* [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
-* [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith)
 * [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys)
 * [Ecospherical Expansion](https://www.curseforge.com/minecraft/mc-mods/ecospherical-expansion)
 * [The Undergarden](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)
